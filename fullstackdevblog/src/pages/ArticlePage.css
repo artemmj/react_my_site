@@ -1,0 +1,88 @@
+/* Основной контейнер для статьи */
+.article-container {
+    max-width: 1200px;                          /* Ограничение максимальной ширины контента */
+    margin: 20px auto 40px;                     /* Вертикальные отступы + автоматическое центрирование по горизонтали */
+    padding: 2rem;                              /* Внутренние отступы со всех сторон */
+    background: var(--secondary);               /* Цвет фона из CSS-переменных (меняется при смене темы) */
+    border-radius: 15px;                        /* Закругление углов контейнера */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);  /* Тень с прозрачностью 5% для эффекта глубины */
+    animation: card-entrance 0.5s ease-out;     /* Анимация появления с названием, длительностью и функцией времени */
+}
+.article-container h1 {
+    text-align: center;
+}
+.article-container h3 {
+    text-align: center;
+    background-color: rgb(244, 244, 244);
+}
+.article-container p {
+    margin: 15px;
+}
+.article-container ul {
+    margin-left: 30px;
+}
+.article-title {
+  color: var(--accent);  /* Цвет текста из акцентной переменной */
+  margin-bottom: 1.5rem;  /* Отступ снизу для визуального разделения */
+  font-size: 2.0rem;  /* Размер шрифта для заголовка */
+  border-bottom: 2px solid var(--accent);  /* Подчеркивание акцентной линией */
+  padding-bottom: 0.5rem;  /* Отступ между текстом и нижней границей */
+}
+.article-meta {
+  display: flex;  /* Гибкий контейнер для элементов в строку */
+  gap: 1rem;  /* Расстояние между дочерними элементами */
+  margin-bottom: 2rem;  /* Отступ снизу для разделения с контентом */
+  opacity: 0.8;  /* Полупрозрачность для второстепенной информации */
+  font-size: 0.9rem;  /* Уменьшенный размер шрифта */
+}
+
+/* Стиль для общих текстовых блоков */
+.text-block {
+    color: rgb(0, 0, 0);  /* Акцентная полоса слева */
+    border-left: 4px solid var(--accent);  /* Отступ от левой границы */
+    padding-left: 1rem;  /* Вертикальные отступы */
+    margin: 1.5rem 0;  /* Фон из первичной переменной */
+    background: rgb(211, 229, 240);  /* Внутренние отступы */
+    padding: 5px;  /* Закругление углов */
+    border-radius: 5px;  /* Горизонтальный скролл при необходимости */
+    overflow-x: auto;
+}
+
+/* Стиль подзаголовков разделов */
+.section-title {
+    color: var(--accent);  /* Акцентный цвет текста */
+    margin: 2rem auto 1rem;  /* Отступы: сверху 2rem, снизу 1rem */
+    padding-bottom: 0.3rem;  /* Отступ для визуального разделения линии */
+    border-bottom: 1px dashed var(--accent);  /* Пунктирная акцентная линия снизу */
+}
+
+/* Стилизация путей к файлам */
+.file-path {
+    color: var(--accent);  /* Акцентный цвет текста */
+    font-family: monospace;  /* Моноширинный шрифт */
+    padding: 0.2rem 0.4rem;  /* Компактные внутренние отступы */
+    background: var(--primary);  /* Фон из первичной переменной */
+    border-radius: 4px;  /* Слегка закругленные углы */
+    margin: 0.5rem 0;  /* Небольшие вертикальные отступы */
+    display: inline-block;  /* Строчно-блочное отображение */
+}
+
+/* Кастомные стили для блоков кода */
+.code-block {
+    border: 1px red;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    overflow-x: auto;
+}
+
+.list-headings {
+    margin-bottom: 20px;
+}
+.list-headings a {
+    color: var(--accent-light);
+    font-size: 14px;
+    text-decoration: none;
+}
+.list-headings a:hover {
+    font-style: bold;
+}
